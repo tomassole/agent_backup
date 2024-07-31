@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$(date +%Y%m%d)" -ge "20240724" ]; then
+if [ "$(date +%Y%m%d)" -ge "20240830" ]; then
     echo "This installation script is out of date"
     echo "Please, download a new script from your Cloud Panel"
     exit
@@ -18,5 +18,5 @@ elif which apt-get >/dev/null 2>&1; then
 fi
 
 curl -s ${acronis_repo}/${acronis_file} -o /tmp/${acronis_file}
-bash /tmp/${acronis_file} --auto --token=4CB9-C052-4B6D
+bash /tmp/${acronis_file} --auto --token=9E65-BD8F-4E25
 rm /tmp/${acronis_file}
